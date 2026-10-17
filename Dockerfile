@@ -1,10 +1,8 @@
 
-FROM python:3.12-slim
+FROM nginx:alpine
 
-WORKDIR /app
+COPY index.html /usr/share/nginx/html/index.html
 
-COPY app.py .
+EXPOSE 80
 
-EXPOSE 8000
-
-CMD ["python", "app.py"]
+CMD ["nginx", "-g", "daemon off;"]
