@@ -13,7 +13,7 @@ class SmartNestHandler(BaseHTTPRequestHandler):
             }
         else:
             response = {
-                "message": "SmartNest AI - Version 2 deployed automatically!"
+                "message": "Tested By Shiva"
             }
 
         self.send_response(200)
