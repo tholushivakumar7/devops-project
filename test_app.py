@@ -31,10 +31,9 @@ class TestSmartNestApp(unittest.TestCase):
             handler.wfile.getvalue().decode()
         )
         self.assertEqual(
-            response["message"],
-            "SmartNest AI - Version 2 deployed automatically!"
-        )
-
+    response["message"],
+    "Tested By Shiva"
+)
     def test_health_response(self):
         handler = SmartNestHandler.__new__(SmartNestHandler)
         handler.path = "/health"
