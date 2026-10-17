@@ -32,7 +32,7 @@ class TestSmartNestApp(unittest.TestCase):
         )
         self.assertEqual(
     response["message"],
-    "Tested By Shiva"
+"SmartNest AI - CI/CD Automation Successful."
 )
     def test_health_response(self):
         handler = SmartNestHandler.__new__(SmartNestHandler)
