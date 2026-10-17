@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .card {
+            max-width: 550px;
+            margin: auto;
+            padding: 35px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        .status {
+            color: #15803d;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>CI/CD Pipeline Demo</h1>
+
+        <p class="status">Application is running!</p>
+
+        <p>This website is deployed using:</p>
+
+        <p>GitHub → Jenkins → Docker → AWS EC2</p>
+
+        <h3 id="version">Version 1.0</h3>
+
+        <button onclick="showStatus()">Test Application</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function showStatus() {
+            document.getElementById("result").textContent =
+                "Website is working successfully!";
+        }
+    </script>
+</body>
+</html>
